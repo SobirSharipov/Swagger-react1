@@ -42,6 +42,7 @@ const Card = () => {
             await axios.post(api, newUser)
             get()
             setIsModalOpen(false);
+            setAddname("")
         } catch (error) {
             console.error(error);
 
